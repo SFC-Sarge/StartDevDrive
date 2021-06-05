@@ -1,0 +1,4 @@
+select vdisk file="F:\Development.vhdx"
+attach vdisk
+assign letter=E
+exit

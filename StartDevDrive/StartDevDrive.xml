@@ -1,0 +1,1511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StartDevDrive</name>
+    </assembly>
+    <members>
+        <member name="T:StartDevDrive.FileLogger">
+            <summary>
+               Class FileLogger
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.FileLogger._category">
+            <summary>
+            The category
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.FileLogger._writer">
+            <summary>
+            The writer
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLogger.#ctor(System.String,System.IO.StreamWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StartDevDrive.FileLogger"/> class.
+            </summary>
+            <param name="category">The category.</param>
+            <param name="writer">The writer.</param>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLogger.BeginScope``1(``0)">
+            <summary>
+            Begins a logical operation scope.
+            </summary>
+            <typeparam name="TState">The type of the state to begin scope for.</typeparam>
+            <param name="state">The identifier for the scope.</param>
+            <returns>An <see cref="T:System.IDisposable" /> that ends the logical operation scope on dispose.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:StartDevDrive.FileLogger.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)">
+            <summary>
+            Checks if the given <paramref name="logLevel" /> is enabled.
+            </summary>
+            <param name="logLevel">level to be checked.</param>
+            <returns><c>true</c> if enabled.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <summary>
+            Writes a log entry.
+            </summary>
+            <typeparam name="TState">The type of the object to be written.</typeparam>
+            <param name="logLevel">Entry will be written on this level.</param>
+            <param name="eventId">Id of the event.</param>
+            <param name="state">The entry to be written. Can be also an object.</param>
+            <param name="exception">The exception related to this entry.</param>
+            <param name="formatter">Function to create a <see cref="T:System.String" /> message of the <paramref name="state" /> and <paramref name="exception" />.</param>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="T:StartDevDrive.FileLoggerExtensions">
+            <summary>
+               Class FileLoggerExtensions
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerExtensions.AddFile(Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.String)">
+            <summary>
+            Adds the file.
+            </summary>
+            <param name="factory">The factory.</param>
+            <param name="name">The name.</param>
+            <param name="logFolder">The log folder.</param>
+            <returns>ILoggerFactory.</returns>
+            <remarks><para>
+              <b>History:</b>
+            </para>
+            <list type="table">
+              <listheader>
+                <devName>Developer\Date\Time</devName>
+                <devCompany>Developer Company</devCompany>
+                <devPhone>Developer Phone</devPhone>
+                <devEmail>Developer Email</devEmail>
+                <devMachine>Developed On</devMachine>
+                <description>Description</description>
+              </listheader>
+              <item>
+                <devName>
+            Developer: Danny C. McNaught
+            <para>Date: Friday, July 26, 2019</para><para>Time: 7:27 AM</para></devName>
+                <devCompany>United States Postal Service</devCompany>
+                <devPhone>1-984-292-3437</devPhone>
+                <devEmail>
+                  <a href="mailto:danny.mcnaught@uspsector.com">mailto:danny.mcnaught@uspsector.com</a>
+                  <para>
+                    <a href="mailto:danny.c.mcnaught@usps.gov">mailto:danny.c.mcnaught@usps.gov</a>
+                  </para>
+                  <para>
+                    <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+                  </para>
+                </devEmail>
+                <devMachine>G25FZQ2</devMachine>
+                <description>Created XML Comment</description>
+              </item>
+            </list></remarks>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="T:StartDevDrive.FileLoggerProvider">
+            <summary>
+               Class FileLoggerProvider
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.FileLoggerProvider._writer">
+            <summary>
+            The writer
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.FileLoggerProvider._loggers">
+            <summary>
+            The loggers
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StartDevDrive.FileLoggerProvider" /> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="logFolder">The log folder.</param>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.#ctor(System.IO.StreamWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StartDevDrive.FileLoggerProvider" /> class.
+            </summary>
+            <param name="writer">The writer.</param>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.GetLogFileName(System.String,System.String)">
+            <summary>
+            Gets the name of the log file.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="logFolder">The log folder.</param>
+            <returns>System.String.</returns>
+            <remarks><para>
+              <b>History:</b>
+            </para>
+            <list type="table">
+              <listheader>
+                <devName>Developer\Date\Time</devName>
+                <devCompany>Developer Company</devCompany>
+                <devPhone>Developer Phone</devPhone>
+                <devEmail>Developer Email</devEmail>
+                <devMachine>Developed On</devMachine>
+                <description>Description</description>
+              </listheader>
+              <item>
+                <devName>
+            Developer: Danny C. McNaught
+            <para>Date: Friday, July 26, 2019</para><para>Time: 8:27 AM</para></devName>
+                <devCompany>United States Postal Service</devCompany>
+                <devPhone>1-984-292-3437</devPhone>
+                <devEmail>
+                  <a href="mailto:danny.mcnaught@uspsector.com">mailto:danny.mcnaught@uspsector.com</a>
+                  <para>
+                    <a href="mailto:danny.c.mcnaught@usps.gov">mailto:danny.c.mcnaught@usps.gov</a>
+                  </para>
+                  <para>
+                    <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+                  </para>
+                </devEmail>
+                <devMachine>G25FZQ2</devMachine>
+                <description>Created XML Comment</description>
+              </item>
+            </list></remarks>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.AppPath">
+            <summary>
+            Applications the path.
+            </summary>
+            <returns>System.String.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.AppName">
+            <summary>
+            Applications the name.
+            </summary>
+            <returns>System.String.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.CreateLogger(System.String)">
+            <summary>
+            Creates a new T:Microsoft.Extensions.Logging.ILogger instance.
+            </summary>
+            <param name="categoryName">The category name for messages produced by the logger.</param>
+            <returns>ILogger.</returns>
+            <remarks><para>
+              <b>History:</b>
+            </para>
+            <list type="table">
+              <listheader>
+                <devName>Developer\Date\Time</devName>
+                <devCompany>Developer Company</devCompany>
+                <devPhone>Developer Phone</devPhone>
+                <devEmail>Developer Email</devEmail>
+                <devMachine>Developed On</devMachine>
+                <description>Description</description>
+              </listheader>
+              <item>
+                <devName>
+            Developer: Danny C. McNaught
+            <para>Date: Friday, July 26, 2019</para><para>Time: 8:27 AM</para></devName>
+                <devCompany>United States Postal Service</devCompany>
+                <devPhone>1-984-292-3437</devPhone>
+                <devEmail>
+                  <a href="mailto:danny.mcnaught@uspsector.com">mailto:danny.mcnaught@uspsector.com</a>
+                  <para>
+                    <a href="mailto:danny.c.mcnaught@usps.gov">mailto:danny.c.mcnaught@usps.gov</a>
+                  </para>
+                  <para>
+                    <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+                  </para>
+                </devEmail>
+                <devMachine>G25FZQ2</devMachine>
+                <description>Created XML Comment</description>
+              </item>
+            </list></remarks>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.FileLoggerProvider.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <remarks><para>
+              <b>History:</b>
+            </para>
+            <list type="table">
+              <listheader>
+                <devName>Developer\Date\Time</devName>
+                <devCompany>Developer Company</devCompany>
+                <devPhone>Developer Phone</devPhone>
+                <devEmail>Developer Email</devEmail>
+                <devMachine>Developed On</devMachine>
+                <description>Description</description>
+              </listheader>
+              <item>
+                <devName>
+            Developer: Danny C. McNaught
+            <para>Date: Friday, July 26, 2019</para><para>Time: 8:27 AM</para></devName>
+                <devCompany>United States Postal Service</devCompany>
+                <devPhone>1-984-292-3437</devPhone>
+                <devEmail>
+                  <a href="mailto:danny.mcnaught@uspsector.com">mailto:danny.mcnaught@uspsector.com</a>
+                  <para>
+                    <a href="mailto:danny.c.mcnaught@usps.gov">mailto:danny.c.mcnaught@usps.gov</a>
+                  </para>
+                  <para>
+                    <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+                  </para>
+                </devEmail>
+                <devMachine>G25FZQ2</devMachine>
+                <description>Created XML Comment</description>
+              </item>
+            </list></remarks>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:04 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="T:StartDevDrive.Program">
+            <summary>
+               Class Program
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="P:StartDevDrive.Program.Factory">
+            <summary>
+            Gets or sets the factory.
+            </summary>
+            <value>The factory.</value>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="P:StartDevDrive.Program.Logger">
+            <summary>
+            Gets or sets the logger.
+            </summary>
+            <value>The logger.</value>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="P:StartDevDrive.Program.DDriveCounter">
+            <summary>
+            Gets or sets the d drive counter.
+            </summary>
+            <value>The d drive counter.</value>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="P:StartDevDrive.Program.EDriveCounter">
+            <summary>
+            Gets or sets the e drive counter.
+            </summary>
+            <value>The e drive counter.</value>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.Program.RefreshIconCache">
+            <summary>
+            Refreshes the icon cache.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.Program.RefreshIconCacheTasksAsync">
+            <summary>Refreshes the icon cache tasks asynchronous.</summary>
+            <remarks>
+              <para>
+                <b>History:</b>
+              </para>
+              <list type="table">
+                <listheader>
+                  <term>Developer\Date\Time</term>
+                  <term>Developer Company</term>
+                  <term>Developer Phone</term>
+                  <term>Developer Email</term>
+                  <term>Developer On</term>
+                  <term>Description</term>
+                </listheader>
+                <item>
+                  <description>
+            		Developer: Danny C. McNaught
+            		<para>Date: Tuesday, May 26, 2020</para><para>Time: 21:39 PM</para></description>
+                  <description>Computer Question</description>
+                  <description>1-919-239-3306</description>
+                  <description>
+                    <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+                  </description>
+                  <description>SURFACE-PRO-LTE</description>
+                  <description>Created XML Comment</description>
+                </item>
+              </list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.Program.MountDriveTasksAsync">
+            <summary>
+            Mounts the drive tasks asynchronous.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.Program.MountDrive(System.Boolean)">
+            <summary>
+            Mounts the drive.
+            </summary>
+            <param name="defaultValue">if set to <c>true</c> [default value].</param>
+            <returns>StringBuilder.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Saturday, February 1, 2020</para>
+            		<para>Time: 17:01 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="T:StartDevDrive.QueryUserNotificationState">
+            <summary>
+               Class QueryUserNotificationState
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="T:StartDevDrive.QueryUserNotificationState.UserNotificationState">
+            <summary>
+            [ERROR: invalid expression FieldName.Words.TheAndAllAsSentence]
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.NotPresent">
+            <summary>
+            A screen saver is displayed, the machine is locked,
+            or a nonactive Fast User Switching session is in progress.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.Busy">
+            <summary>
+            A full-screen application is running or Presentation Settings are applied.
+            Presentation Settings allow a user to put their machine into a state fit
+            for an uninterrupted presentation, such as a set of PowerPoint slides, with a single click.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen">
+            <summary>
+            A full-screen (exclusive mode) Direct3D application is running.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.PresentationMode">
+            <summary>
+            The user has activated Windows presentation settings to block notifications and pop-up messages.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.AcceptsNotifications">
+            <summary>
+            None of the other states are found, notifications can be freely sent.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="F:StartDevDrive.QueryUserNotificationState.UserNotificationState.QuietTime">
+            <summary>
+            Introduced in Windows 7. The current user is in "quiet time", which is the first hour after
+            a new user logs into his or her account for the first time. During this time, most notifications
+            should not be sent or shown. This lets a user become accustomed to a new computer system
+            without those distractions.
+            Quiet time also occurs for each user after an operating system upgrade or clean installation.
+            </summary>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.QueryUserNotificationState.SHQueryUserNotificationState(StartDevDrive.QueryUserNotificationState.UserNotificationState@)">
+            <summary>
+            Shes the state of the query user notification.
+            </summary>
+            <param name="userNotificationState">State of the user notification.</param>
+            <returns>System.Int32.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+        <member name="M:StartDevDrive.QueryUserNotificationState.State">
+            <summary>
+            States this instance.
+            </summary>
+            <returns>UserNotificationState.</returns>
+            <remarks>
+             	<para><b>History:</b></para>
+             	<list type="table">
+             		<listheader>
+             			<devName>Developer\Date\Time</devName>
+             			<devCompany>Developer Company</devCompany>
+             			<devPhone>Developer Phone</devPhone>
+             			<devEmail>Developer Email</devEmail>
+             			<devMachine>Developer On</devMachine>
+             			<description>Description</description>
+             		</listheader>
+             		<item>
+             				<devName>
+            		Developer: Danny C. McNaught
+            		<para>Date: Sunday, February 2, 2020</para>
+            		<para>Time: 15:32 PM</para>
+            	</devName>
+             			<devCompany>Computer Question</devCompany>
+             			<devPhone>1-919-239-3306</devPhone>
+             				<devEmail>
+            		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+            	</devEmail>
+             			<devMachine>SURFACE-PRO-LTE</devMachine>
+             			<description>Created XML Comment</description>
+             		</item>
+             	</list>
+            </remarks>
+        </member>
+    </members>
+</doc>

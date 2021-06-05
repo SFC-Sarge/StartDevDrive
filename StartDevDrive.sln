@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartDevDrive", "StartDevDrive\StartDevDrive.csproj", "{2BC53D22-53CA-4D39-BA00-9A314338BB68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Debug|x64.ActiveCfg = Debug|x64
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Debug|x64.Build.0 = Debug|x64
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Release|Any CPU.ActiveCfg = Release|x64
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Release|x64.ActiveCfg = Release|x64
+		{2BC53D22-53CA-4D39-BA00-9A314338BB68}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58692EC8-0ACC-4618-B439-8BEB52E077DA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/sfcsarge
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = StartDevDrive\\StartDevDrive.csproj
+		SccProjectName1 = StartDevDrive
+		SccLocalPath1 = StartDevDrive
+	EndGlobalSection
+EndGlobal
