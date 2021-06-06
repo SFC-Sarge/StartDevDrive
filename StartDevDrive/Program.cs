@@ -29,7 +29,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace StartDevDrive
 {
@@ -298,7 +298,6 @@ namespace StartDevDrive
             string[] ids = processes.Select(p => p.Id.ToString()).ToArray();
             if (ids.Length > 1)
             {
-                MessageBox.Show("StartDevDrive is already running on seperate thread, will exit now!", "StartDevDrive is Running",MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
                 Environment.Exit(0);
             }
             if (!Directory.Exists(args[1]))

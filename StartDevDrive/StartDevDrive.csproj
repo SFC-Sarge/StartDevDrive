@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <UseWindowsForms>true</UseWindowsForms>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net5.0-windows7.0</TargetFramework>
     <PublishTrimmed>true</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
@@ -11,8 +10,8 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x64</Platforms>
     <Authors>Danny McNaught</Authors>
-    <AssemblyVersion>1.0.89.7826</AssemblyVersion>
-    <FileVersion>1.0.89.7826</FileVersion>
+    <AssemblyVersion>1.0.95.7827</AssemblyVersion>
+    <FileVersion>1.0.95.7827</FileVersion>
     <PackageIcon>Tools.png</PackageIcon>
     <PackageIconUrl />
     <Description>Mount the Development VHDX file from USB-C External SSD and assigns letter E:</Description>
@@ -21,7 +20,7 @@
     <Company>Computer Question</Company>
     <ApplicationIcon>Tools.ico</ApplicationIcon>
     <StartupObject>StartDevDrive.Program</StartupObject>
-    <Version>1.0.49.7338</Version>
+    <Version>1.0.91.7827</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
