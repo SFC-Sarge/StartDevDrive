@@ -1177,6 +1177,37 @@
              	</list>
             </remarks>
         </member>
+        <member name="T:StartDevDrive.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:StartDevDrive.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:StartDevDrive.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:StartDevDrive.Properties.Resources.AppLogLocation">
+            <summary>
+              Looks up a localized string similar to C:\temp\MountDevDrive.
+            </summary>
+        </member>
+        <member name="P:StartDevDrive.Properties.Resources.VhdxAssignedDriveLetter">
+            <summary>
+              Looks up a localized string similar to E:.
+            </summary>
+        </member>
+        <member name="P:StartDevDrive.Properties.Resources.VhdxDriveLocation">
+            <summary>
+              Looks up a localized string similar to F:.
+            </summary>
+        </member>
         <member name="T:StartDevDrive.QueryUserNotificationState">
             <summary>
                Class QueryUserNotificationState

@@ -292,7 +292,7 @@ namespace StartDevDrive
             {
                 args = new string[2];
                 args.SetValue("1000", 0);
-                args.SetValue($@"{Properties.Settings.Default.AppLogLocation}", 1);
+                args.SetValue($@"{Properties.Resources.AppLogLocation}", 1);
             }
             Process[] processes = Process.GetProcessesByName("StartDevDrive");
             string[] ids = processes.Select(p => p.Id.ToString()).ToArray();
@@ -324,34 +324,34 @@ namespace StartDevDrive
             } while (!File.Exists($@"{AppLocation}\Development.txt"));
             Logger.LogInformation(message: $@"File {AppLocation}\Development.txt found loop completed with total count: {DDriveCounter}.");
             Logger.LogInformation(message: $@"File {AppLocation}\Development.txt found. StartDevDrive Continues.");
-            Logger.LogInformation(message: $@"Checking for Development.vhdx File in {Properties.Settings.Default.VhdxDriveLocation} drive!");
+            Logger.LogInformation(message: $@"Checking for Development.vhdx File in {Properties.Resources.VhdxDriveLocation} drive!");
             do
             {
                 DDriveCounter++;
-                Logger.LogWarning(message: $@"File {Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx not found.");
-                Logger.LogWarning(message: $@"File {Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx not found. Thread Sleep for: {args[0]}");
-                Logger.LogWarning(message: $@"File {Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx not found loop counter: {DDriveCounter}.");
+                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found.");
+                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found. Thread Sleep for: {args[0]}");
+                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found loop counter: {DDriveCounter}.");
                 Thread.Sleep(Convert.ToInt32(args[0]));
-            } while (!File.Exists($@"{Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx"));
-            Logger.LogInformation(message: $@"File {Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx found loop completed with total count: {DDriveCounter}.");
-            Logger.LogInformation(message: $@"File {Properties.Settings.Default.VhdxDriveLocation}\Development.vhdx found. StartDevDrive Continues.");
+            } while (!File.Exists($@"{Properties.Resources.VhdxDriveLocation}\Development.vhdx"));
+            Logger.LogInformation(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx found loop completed with total count: {DDriveCounter}.");
+            Logger.LogInformation(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx found. StartDevDrive Continues.");
             do
             {
                 EDriveCounter++;
-                Logger.LogInformation(message: $@"Directory {Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE not found loop counter: {EDriveCounter}.");
-                if (!Directory.Exists($@"{Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"))
+                Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE not found loop counter: {EDriveCounter}.");
+                if (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"))
                 {
-                    Logger.LogWarning(message: $@"{Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe does not exist.");
+                    Logger.LogWarning(message: $@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe does not exist.");
                     await MountDriveTasksAsync();
                 }
                 else
                 {
                     continue;
                 }
-            } while (!Directory.Exists($@"{Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"));
-            Logger.LogWarning(message: $@"{Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe exist.");
-            Logger.LogInformation(message: $@"Directory {Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found loop completed with total count: {EDriveCounter}.");
-            Logger.LogInformation(message: $@"Directory {Properties.Settings.Default.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found. StartDevDrive Continues.");
+            } while (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"));
+            Logger.LogWarning(message: $@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe exist.");
+            Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found loop completed with total count: {EDriveCounter}.");
+            Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found. StartDevDrive Continues.");
             Logger.LogInformation(message: $@"Ready to Refresh Desktop Icons. First Pass. Thread Sleep for: {Convert.ToInt32(args[0]) * 10}");
             int timeout = Convert.ToInt32(args[0]) * 10;
             int passCount = 0;
