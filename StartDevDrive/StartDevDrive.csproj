@@ -10,8 +10,8 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x64</Platforms>
     <Authors>Danny McNaught</Authors>
-    <AssemblyVersion>1.0.103.7827</AssemblyVersion>
-    <FileVersion>1.0.103.7827</FileVersion>
+    <AssemblyVersion>1.0.95.7827</AssemblyVersion>
+    <FileVersion>1.0.95.7827</FileVersion>
     <PackageIcon>Tools.png</PackageIcon>
     <PackageIconUrl />
     <Description>Mount the Development VHDX file from USB-C External SSD and assigns letter E:</Description>
