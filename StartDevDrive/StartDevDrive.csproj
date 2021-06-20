@@ -6,17 +6,23 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x64</Platforms>
     <Authors>Danny McNaught</Authors>
-    <AssemblyVersion>1.0.95.7827</AssemblyVersion>
-    <FileVersion>1.0.95.7827</FileVersion>
+    <AssemblyVersion>1.0.2022.0</AssemblyVersion>
+    <FileVersion>1.0.2022.0</FileVersion>
     <PackageIcon>Tools.png</PackageIcon>
     <PackageIconUrl />
-    <Description>Mount the Development VHDX file from USB-C External SSD and assigns letter E:</Description>
+    <Description>Mount the Development.vhdx image file from USB-C External SSD and assigns letter E:
+De velopment.vhdx contains all the installed Visual Studio Enterprise products so if you have a small C: drive in Windows 10 you can still use Visual Studio and develop without running out of disk space.</Description>
     <NeutralLanguage>en</NeutralLanguage>
     <Copyright>Computer Question 2021</Copyright>
     <Company>Computer Question</Company>
     <ApplicationIcon>Tools.ico</ApplicationIcon>
     <StartupObject>StartDevDrive.Program</StartupObject>
-    <Version>1.0.91.7827</Version>
+    <Version>1.0.2022.0</Version>
+    <PackageReleaseNotes>Moved from .Net 5.0 to .Net 6.0.100-preview.5.21302.13 and from Visual Studio 2019 Enterprise to Visual Studio 2022 Enterprise Preview 1.</PackageReleaseNotes>
+    <RepositoryType>Private</RepositoryType>
+    <RepositoryUrl>https://github.com/SFC-Sarge/StartDevDrive.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SFC-Sarge/StartDevDrive.git</PackageProjectUrl>
+    <PackageTags />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
