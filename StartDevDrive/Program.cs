@@ -314,71 +314,56 @@ namespace StartDevDrive
             Logger.LogInformation(message: $@"Start Dev Drive Begins.");
             Logger.LogInformation(message: $@"StartDevDrive.exe version: {version}.");
             Logger.LogInformation(message: $@"Checking for Development.txt file in {AppLocation} drive!");
-            do
+            if (!File.Exists($@"{AppLocation}Development.txt"))
             {
-                DDriveCounter++;
-                Logger.LogWarning(message: $@"File {AppLocation}\Development.txt not found.");
-                Logger.LogWarning(message: $@"File {AppLocation}\Development.txt not found. Thread Sleep for: {args[0]}");
-                Logger.LogWarning(message: $@"File {AppLocation}\Development.txt not found loop counter: {DDriveCounter}.");
-                Thread.Sleep(Convert.ToInt32(args[0]));
-            } while (!File.Exists($@"{AppLocation}\Development.txt"));
-            Logger.LogInformation(message: $@"File {AppLocation}\Development.txt found loop completed with total count: {DDriveCounter}.");
-            Logger.LogInformation(message: $@"File {AppLocation}\Development.txt found. StartDevDrive Continues.");
+                do
+                {
+                    DDriveCounter++;
+                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found.");
+                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found. Thread Sleep for: {args[0]}");
+                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found loop counter: {DDriveCounter}.");
+                    Thread.Sleep(Convert.ToInt32(args[0]));
+                } while (!File.Exists($@"{AppLocation}Development.txt"));
+            }
+            Logger.LogInformation(message: $@"File {AppLocation}Development.txt found loop completed with total count: {DDriveCounter}.");
+            Logger.LogInformation(message: $@"File {AppLocation}Development.txt found. StartDevDrive Continues.");
             Logger.LogInformation(message: $@"Checking for Development.vhdx File in {Properties.Resources.VhdxDriveLocation} drive!");
-            do
+            if (!File.Exists($@"{Properties.Resources.VhdxDriveLocation}\Development.vhdx"))
             {
-                DDriveCounter++;
-                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found.");
-                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found. Thread Sleep for: {args[0]}");
-                Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found loop counter: {DDriveCounter}.");
-                Thread.Sleep(Convert.ToInt32(args[0]));
-            } while (!File.Exists($@"{Properties.Resources.VhdxDriveLocation}\Development.vhdx"));
+                do
+                {
+                    DDriveCounter++;
+                    Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found.");
+                    Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found. Thread Sleep for: {args[0]}");
+                    Logger.LogWarning(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx not found loop counter: {DDriveCounter}.");
+                    Thread.Sleep(Convert.ToInt32(args[0]));
+                } while (!File.Exists($@"{Properties.Resources.VhdxDriveLocation}\Development.vhdx"));
+            }
             Logger.LogInformation(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx found loop completed with total count: {DDriveCounter}.");
             Logger.LogInformation(message: $@"File {Properties.Resources.VhdxDriveLocation}\Development.vhdx found. StartDevDrive Continues.");
-            do
+            if (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"))
             {
-                EDriveCounter++;
-                Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE not found loop counter: {EDriveCounter}.");
-                if (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"))
+                do
                 {
-                    Logger.LogWarning(message: $@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe does not exist.");
-                    await MountDriveTasksAsync();
-                }
-                else
-                {
-                    continue;
-                }
-            } while (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"));
+                    EDriveCounter++;
+                    Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE not found loop counter: {EDriveCounter}.");
+                    if (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"))
+                    {
+                        Logger.LogWarning(message: $@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe does not exist.");
+                        await MountDriveTasksAsync();
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                } while (!Directory.Exists($@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE"));
+            }
             Logger.LogWarning(message: $@"{Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe exist.");
             Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found loop completed with total count: {EDriveCounter}.");
             Logger.LogInformation(message: $@"Directory {Properties.Resources.VhdxAssignedDriveLetter}\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE found. StartDevDrive Continues.");
             Logger.LogInformation(message: $@"Ready to Refresh Desktop Icons. First Pass. Thread Sleep for: {Convert.ToInt32(args[0]) * 10}");
             int timeout = Convert.ToInt32(args[0]) * 10;
             int passCount = 0;
-            //do
-            //{
-            //    try
-            //    {
-            //        timeout++;
-            //        passCount++;
-            //        Logger.LogInformation(message: $@"Pass {passCount}. Thread Sleep for: {Convert.ToInt32(args[0]) * 10}");
-            //        Thread.Sleep(Convert.ToInt32(args[0]) * 10);
-            //        //QueryUserNotificationState.State();
-            //        Logger.LogInformation(message: $@"QueryUserNotificationState.UserNotificationState = {QueryUserNotificationState.State()}");
-            //        if (QueryUserNotificationState.State() == QueryUserNotificationState.UserNotificationState.AcceptsNotifications)
-            //        {
-            //            Logger.LogInformation(message: $@"Exit loop QueryUserNotificationState.State() with Pass {passCount}.{Environment.NewLine}QueryUserNotificationState.UserNotificationState = {QueryUserNotificationState.State()}");
-            //            break;
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Logger.LogError(message: $@"QueryUserNotificationState.State() Error: {ex.Message}. Stack Trace {ex.StackTrace}.");
-            //        break;
-            //    }
-            //} while (QueryUserNotificationState.State() != QueryUserNotificationState.UserNotificationState.AcceptsNotifications);
-            //timeout = Convert.ToInt32(args[0]) * 10;
-            //passCount = 0;
             do
             {
                 Thread.Sleep(timeout);

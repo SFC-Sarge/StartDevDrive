@@ -2,11 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <PublishTrimmed>true</PublishTrimmed>
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
-    <PublishSingleFile>true</PublishSingleFile>
+    <TargetFramework>net6.0</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x64</Platforms>
     <Authors>Danny McNaught</Authors>
@@ -24,26 +20,37 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ErrorReport>prompt</ErrorReport>
-    <DebugType>embedded</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-    <DocumentationFile>E:\Workspaces\sfcsarge\StartDevDrive\StartDevDrive\StartDevDrive.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\Release\net6.0\win-x64\StartDevDrive.xml</DocumentationFile>
+    <BuildDocFx>true</BuildDocFx>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DocumentationFile>bin\x64\Debug\net6.0\win-x64\StartDevDrive.xml</DocumentationFile>
+    <BuildDocFx>false</BuildDocFx>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="StartDevDrive.xml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Development.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="StartDevDrive.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.57.2">
+    <PackageReference Include="docfx.console" Version="2.58.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0-preview.5.21301.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0-preview.5.21301.5" />
   </ItemGroup>
 
   <ItemGroup>
