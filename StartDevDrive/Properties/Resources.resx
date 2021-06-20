@@ -120,10 +120,16 @@
   <data name="AppLogLocation" xml:space="preserve">
     <value>C:\temp\MountDevDrive</value>
   </data>
+  <data name="MountFileName" xml:space="preserve">
+    <value>Development.txt</value>
+  </data>
   <data name="VhdxAssignedDriveLetter" xml:space="preserve">
     <value>E:</value>
   </data>
   <data name="VhdxDriveLocation" xml:space="preserve">
-    <value>F:</value>
+    <value>F:\</value>
+  </data>
+  <data name="VhdxFileName" xml:space="preserve">
+    <value>Development.vhdx</value>
   </data>
 </root>

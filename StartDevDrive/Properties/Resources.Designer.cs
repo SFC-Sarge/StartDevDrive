@@ -19,7 +19,7 @@ namespace StartDevDrive.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -70,6 +70,15 @@ namespace StartDevDrive.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Development.txt.
+        /// </summary>
+        internal static string MountFileName {
+            get {
+                return ResourceManager.GetString("MountFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E:.
         /// </summary>
         internal static string VhdxAssignedDriveLetter {
@@ -79,11 +88,20 @@ namespace StartDevDrive.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to F:.
+        ///   Looks up a localized string similar to F:\.
         /// </summary>
         internal static string VhdxDriveLocation {
             get {
                 return ResourceManager.GetString("VhdxDriveLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Development.vhdx.
+        /// </summary>
+        internal static string VhdxFileName {
+            get {
+                return ResourceManager.GetString("VhdxFileName", resourceCulture);
             }
         }
     }

@@ -313,20 +313,21 @@ namespace StartDevDrive
             Logger = Factory.CreateLogger("Mount Development Drive");
             Logger.LogInformation(message: $@"Start Dev Drive Begins.");
             Logger.LogInformation(message: $@"StartDevDrive.exe version: {version}.");
-            Logger.LogInformation(message: $@"Checking for Development.txt file in {AppLocation} drive!");
-            if (!File.Exists($@"{AppLocation}Development.txt"))
+            Logger.LogInformation(message: $@"Checking for {Properties.Resources.MountFileName} file in {AppLocation} drive!");
+            if (!File.Exists($"{AppLocation}{Properties.Resources.MountFileName}"))
             {
                 do
                 {
                     DDriveCounter++;
-                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found.");
-                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found. Thread Sleep for: {args[0]}");
-                    Logger.LogWarning(message: $@"File {AppLocation}Development.txt not found loop counter: {DDriveCounter}.");
+                    Logger.LogWarning(message: $@"File {AppLocation}{Properties.Resources.MountFileName} not found.");
+                    Logger.LogWarning(message: $@"File {AppLocation}{Properties.Resources.MountFileName} not found. Thread Sleep for: {args[0]}");
+                    Logger.LogWarning(message: $@"File {AppLocation}{Properties.Resources.MountFileName} not found loop counter: {DDriveCounter}.");
+                    await CreateDevelopmentTxtFileAsync(Properties.Resources.VhdxDriveLocation, Properties.Resources.VhdxFileName, $"{AppLocation}{Properties.Resources.MountFileName}", Properties.Resources.VhdxAssignedDriveLetter);
                     Thread.Sleep(Convert.ToInt32(args[0]));
-                } while (!File.Exists($@"{AppLocation}Development.txt"));
+                } while (!File.Exists($@"{AppLocation}{Properties.Resources.MountFileName}"));
             }
-            Logger.LogInformation(message: $@"File {AppLocation}Development.txt found loop completed with total count: {DDriveCounter}.");
-            Logger.LogInformation(message: $@"File {AppLocation}Development.txt found. StartDevDrive Continues.");
+            Logger.LogInformation(message: $@"File {AppLocation}{Properties.Resources.MountFileName} found loop completed with total count: {DDriveCounter}.");
+            Logger.LogInformation(message: $@"File {AppLocation}{Properties.Resources.MountFileName} found. StartDevDrive Continues.");
             Logger.LogInformation(message: $@"Checking for Development.vhdx File in {Properties.Resources.VhdxDriveLocation} drive!");
             if (!File.Exists($@"{Properties.Resources.VhdxDriveLocation}\Development.vhdx"))
             {
@@ -623,5 +624,31 @@ namespace StartDevDrive
                 return stringBuilder;
             }
         }
+        public static async Task CreateDevelopmentTxtFileAsync(string vhdxDriveLocation, string vhdxFileName, string fileFullName, string vhdxDriveLetter)
+        {
+            string[] lines = { $"select vdisk file=\"{vhdxDriveLocation}{vhdxFileName}\"", "attach vdisk", $"assign letter={vhdxDriveLetter.First()}", "exit" };
+
+            //await File.WriteAllLinesAsync(fileFullName, lines);
+            CancellationTokenSource cts = new();
+            CancellationToken token = cts.Token;
+            Task result = Task.Factory.StartNew(() => File.WriteAllLinesAsync(fileFullName, lines), token, TaskCreationOptions.None, TaskScheduler.Default).ContinueWith((antecedent) =>
+            {
+                switch (antecedent.Result.ToString().ToUpper(CultureInfo.CurrentCulture))
+                {
+                    case var result when new List<string>() { "SUCCESS\r\n" }.Contains(value: result):
+                        Logger.LogInformation(message: $@"Mounting Development Drive Successful.");
+                        break;
+                    case var result when new List<string>() { "FAILED\r\n" }.Contains(value: result):
+                        Logger.LogError(message: $@"Mounting Development Drive Failed.");
+                        break;
+                    default:
+                        Logger.LogError(message: $@"Mounting Development Drive Failed with {antecedent.Result}.");
+                        break;
+                }
+            }, token, TaskContinuationOptions.OnlyOnRanToCompletion, TaskScheduler.Default);
+            await Task.WhenAll(result).ConfigureAwait(false);
+
+        }
+
     }
 }

@@ -6,28 +6,30 @@
           "files": [
             "**.csproj"
           ],
-          "src": "E:\\Workspaces\\sfcsarge\\StartDevDrive\\StartDevDrive"
+          "src": "..\\StartDevDrive"
         }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+  ],
+  "dest": "api"
     }
   ],
   "build": {
+    "template": [
+      "default",
+      "templates/custom"
+    ],
     "content": [
       {
         "files": [
           "api/**.yml",
-          "api/index.md"
+          "api/cover.md",
+          "api/**.md"
         ]
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
+          "articles/cover.md",
+          "articles/Intro.md",
+          "articles/toc.yml"
         ]
       }
     ],
@@ -52,14 +54,57 @@
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default"
-    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "noLangKeyword": false
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "api/cover.md",
+          "api/**.yml"
+        ],
+        "exclude": [
+          "**/toc.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/cover.md",
+          "articles/Intro.md",
+          "articles/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "articles/images/**"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "api/**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "wkhtmltopdf": {
+      "additionalArguments": "--enable-local-file-access --images --outline --header-line --footer-line --footer-left [subsection] --footer-center [page]-of-[toPage] --footer-right [date] --footer-font-name Raleway"
+    },
+    "dest": "_site_pdf"
   }
 }
