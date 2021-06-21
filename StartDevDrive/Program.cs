@@ -1,19 +1,17 @@
 ﻿//***********************************************************************
 // Assembly         : StartDevDrive
-// Author UserID    : sfcsarge
-// Author Full Name : Danny C. McNaught
-// Author Phone     : 1-919-239-3306
+// Author           : Danny C. McNaught
 // Created          : 01-18-2020
 //
-// Created By       : Danny C. McNaught
-// Developer Email  : sfcsarge@outlook.com
 // Last Modified By : Danny C. McNaught
-// Last Modified On : 02-01-2020
+// Last Modified On : Monday, June 21, 2021 1:51:00 AM
+// ***********************************************************************
+// <copyright file="Program.cs" company="Computer Question">
+//     Computer Question 2021
+// </copyright>
 // Change Request # :
 // Version Number   :
-// Description      :
 // File Name        : Program.cs
-// Copyright        : (c) Computer Question. All rights reserved.
 // <summary></summary>
 // ***********************************************************************
 using Microsoft.Extensions.Logging;
@@ -24,8 +22,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -33,254 +29,166 @@ using System.Threading.Tasks;
 
 namespace StartDevDrive
 {
-    /// <summary>
-    ///    Class Program
-    /// </summary>
+    /// <summary>Class Program</summary>
     /// <remarks>
-    ///  	<para><b>History:</b></para>
-    ///  	<list type="table">
-    ///  		<listheader>
-    ///  			<devName>Developer\Date\Time</devName>
-    ///  			<devCompany>Developer Company</devCompany>
-    ///  			<devPhone>Developer Phone</devPhone>
-    ///  			<devEmail>Developer Email</devEmail>
-    ///  			<devMachine>Developer On</devMachine>
-    ///  			<description>Description</description>
-    ///  		</listheader>
-    ///  		<item>
-    ///  				<devName>
-    /// 		Developer: Danny C. McNaught
-    /// 		<para>Date: Saturday, February 1, 2020</para>
-    /// 		<para>Time: 17:01 PM</para>
-    /// 	</devName>
-    ///  			<devCompany>Computer Question</devCompany>
-    ///  			<devPhone>1-919-239-3306</devPhone>
-    ///  				<devEmail>
-    /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-    /// 	</devEmail>
-    ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-    ///  			<description>Created XML Comment</description>
-    ///  		</item>
-    ///  	</list>
+    /// <para><b>History:</b></para>
+    /// <list type="table">
+    /// <item>
+    /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+    /// </item>
+    /// <item>
+    /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+    /// </item>
+    /// <item>
+    /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+    /// </item>
+    /// </list>
     /// </remarks>
     class Program
     {
-        /// <summary>
-        /// Gets or sets the factory.
-        /// </summary>
+        /// <summary>Gets or sets the factory.</summary>
         /// <value>The factory.</value>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static ILoggerFactory Factory { get; set; }
-        /// <summary>
-        /// Gets or sets the logger.
-        /// </summary>
+        /// <summary>Gets or sets the logger.</summary>
         /// <value>The logger.</value>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static ILogger Logger { get; set; }
-        /// <summary>
-        /// Gets or sets the d drive counter.
-        /// </summary>
+        /// <summary>Gets or sets the d drive counter.</summary>
         /// <value>The d drive counter.</value>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static int DDriveCounter { get; set; }
+        /// <summary>Gets or sets the icons refreshed.</summary>
+        /// <value>The icons refreshed.</value>
+        /// <remarks>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
+        /// </remarks>
         public static bool IconsRefreshed { get; set; } = false;
-        /// <summary>
-        /// Gets or sets the e drive counter.
-        /// </summary>
+        /// <summary>Gets or sets the e drive counter.</summary>
         /// <value>The e drive counter.</value>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static int EDriveCounter { get; set; }
-        public static string AppLocation { get; set; } = AppContext.BaseDirectory;
-        /// <summary>
-        /// Defines the entry point of the application.
-        /// </summary>
-        /// <param name="args">The arguments.</param>
+        /// <summary>Gets or sets the application location.</summary>
+        /// <value>The application location.</value>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
+        /// </remarks>
+        public static string AppLocation { get; set; } = AppContext.BaseDirectory;
+        /// <summary>Defines the entry point of the application.</summary>
+        /// <param name="args">The arguments.</param>
+        /// <returns>System.Threading.Tasks.Task.</returns>
+        /// <remarks><para>
+        ///   <b>History:</b>
+        /// </para>
+        /// <list type="table">
+        ///   <listheader>
+        ///     <devName>Developer\Date\Time</devName>
+        ///     <devCompany>Developer Company</devCompany>
+        ///     <devPhone>Developer Phone</devPhone>
+        ///     <devEmail>Developer Email</devEmail>
+        ///     <devMachine>Developer On</devMachine>
+        ///     <description>Description</description>
+        ///   </listheader>
+        ///   <item>
+        ///     <devName>
+        /// Developer: Danny C. McNaught
+        /// <para>Date: Saturday, February 1, 2020</para><para>Time: 17:01 PM</para></devName>
+        ///     <devCompany>Computer Question</devCompany>
+        ///     <devPhone>1-919-239-3306</devPhone>
+        ///     <devEmail>
+        ///       <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+        ///     </devEmail>
+        ///     <devMachine>SURFACE-PRO-LTE</devMachine>
+        ///     <description>Created XML Comment</description>
+        ///   </item>
+        /// </list></remarks>
+        /// <remarks>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         static async Task Main(string[] args)
         {
@@ -376,35 +284,46 @@ namespace StartDevDrive
             Environment.Exit(0);
         }
 
-        /// <summary>
-        /// Refreshes the icon cache.
-        /// </summary>
+        /// <summary>Refreshes the icon cache.</summary>
+        /// <returns>System.Text.StringBuilder.</returns>
+        /// <remarks><para>
+        ///   <b>History:</b>
+        /// </para>
+        /// <list type="table">
+        ///   <listheader>
+        ///     <devName>Developer\Date\Time</devName>
+        ///     <devCompany>Developer Company</devCompany>
+        ///     <devPhone>Developer Phone</devPhone>
+        ///     <devEmail>Developer Email</devEmail>
+        ///     <devMachine>Developer On</devMachine>
+        ///     <description>Description</description>
+        ///   </listheader>
+        ///   <item>
+        ///     <devName>
+        /// Developer: Danny C. McNaught
+        /// <para>Date: Saturday, February 1, 2020</para><para>Time: 17:01 PM</para></devName>
+        ///     <devCompany>Computer Question</devCompany>
+        ///     <devPhone>1-919-239-3306</devPhone>
+        ///     <devEmail>
+        ///       <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+        ///     </devEmail>
+        ///     <devMachine>SURFACE-PRO-LTE</devMachine>
+        ///     <description>Created XML Comment</description>
+        ///   </item>
+        /// </list></remarks>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static StringBuilder RefreshIconCache()
         {
@@ -448,32 +367,45 @@ namespace StartDevDrive
         }
 
         /// <summary>Refreshes the icon cache tasks asynchronous.</summary>
+        /// <returns>System.Threading.Tasks.Task.</returns>
+        /// <remarks><para>
+        ///   <b>History:</b>
+        /// </para>
+        /// <list type="table">
+        ///   <listheader>
+        ///     <term>Developer\Date\Time</term>
+        ///     <term>Developer Company</term>
+        ///     <term>Developer Phone</term>
+        ///     <term>Developer Email</term>
+        ///     <term>Developer On</term>
+        ///     <term>Description</term>
+        ///   </listheader>
+        ///   <item>
+        ///     <description>
+        /// Developer: Danny C. McNaught
+        /// <para>Date: Tuesday, May 26, 2020</para><para>Time: 21:39 PM</para></description>
+        ///     <description>Computer Question</description>
+        ///     <description>1-919-239-3306</description>
+        ///     <description>
+        ///       <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+        ///     </description>
+        ///     <description>SURFACE-PRO-LTE</description>
+        ///     <description>Created XML Comment</description>
+        ///   </item>
+        /// </list></remarks>
         /// <remarks>
-        ///   <para>
-        ///     <b>History:</b>
-        ///   </para>
-        ///   <list type="table">
-        ///     <listheader>
-        ///       <term>Developer\Date\Time</term>
-        ///       <term>Developer Company</term>
-        ///       <term>Developer Phone</term>
-        ///       <term>Developer Email</term>
-        ///       <term>Developer On</term>
-        ///       <term>Description</term>
-        ///     </listheader>
-        ///     <item>
-        ///       <description>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Tuesday, May 26, 2020</para><para>Time: 21:39 PM</para></description>
-        ///       <description>Computer Question</description>
-        ///       <description>1-919-239-3306</description>
-        ///       <description>
-        ///         <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        ///       </description>
-        ///       <description>SURFACE-PRO-LTE</description>
-        ///       <description>Created XML Comment</description>
-        ///     </item>
-        ///   </list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static async Task RefreshIconCacheTasksAsync()
         {
@@ -500,35 +432,46 @@ namespace StartDevDrive
             await Task.WhenAll(result).ConfigureAwait(false);
         }
 
-        /// <summary>
-        /// Mounts the drive tasks asynchronous.
-        /// </summary>
+        /// <summary>Mounts the drive tasks asynchronous.</summary>
+        /// <returns>System.Threading.Tasks.Task.</returns>
+        /// <remarks><para>
+        ///   <b>History:</b>
+        /// </para>
+        /// <list type="table">
+        ///   <listheader>
+        ///     <devName>Developer\Date\Time</devName>
+        ///     <devCompany>Developer Company</devCompany>
+        ///     <devPhone>Developer Phone</devPhone>
+        ///     <devEmail>Developer Email</devEmail>
+        ///     <devMachine>Developer On</devMachine>
+        ///     <description>Description</description>
+        ///   </listheader>
+        ///   <item>
+        ///     <devName>
+        /// Developer: Danny C. McNaught
+        /// <para>Date: Saturday, February 1, 2020</para><para>Time: 17:01 PM</para></devName>
+        ///     <devCompany>Computer Question</devCompany>
+        ///     <devPhone>1-919-239-3306</devPhone>
+        ///     <devEmail>
+        ///       <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+        ///     </devEmail>
+        ///     <devMachine>SURFACE-PRO-LTE</devMachine>
+        ///     <description>Created XML Comment</description>
+        ///   </item>
+        /// </list></remarks>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static async Task MountDriveTasksAsync()
         {
@@ -552,37 +495,47 @@ namespace StartDevDrive
             await Task.WhenAll(result).ConfigureAwait(false);
         }
 
-        /// <summary>
-        /// Mounts the drive.
-        /// </summary>
+        /// <summary>Mounts the drive.</summary>
         /// <param name="defaultValue">if set to <c>true</c> [default value].</param>
         /// <returns>StringBuilder.</returns>
+        /// <remarks><para>
+        ///   <b>History:</b>
+        /// </para>
+        /// <list type="table">
+        ///   <listheader>
+        ///     <devName>Developer\Date\Time</devName>
+        ///     <devCompany>Developer Company</devCompany>
+        ///     <devPhone>Developer Phone</devPhone>
+        ///     <devEmail>Developer Email</devEmail>
+        ///     <devMachine>Developer On</devMachine>
+        ///     <description>Description</description>
+        ///   </listheader>
+        ///   <item>
+        ///     <devName>
+        /// Developer: Danny C. McNaught
+        /// <para>Date: Saturday, February 1, 2020</para><para>Time: 17:01 PM</para></devName>
+        ///     <devCompany>Computer Question</devCompany>
+        ///     <devPhone>1-919-239-3306</devPhone>
+        ///     <devEmail>
+        ///       <a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
+        ///     </devEmail>
+        ///     <devMachine>SURFACE-PRO-LTE</devMachine>
+        ///     <description>Created XML Comment</description>
+        ///   </item>
+        /// </list></remarks>
         /// <remarks>
-        ///  	<para><b>History:</b></para>
-        ///  	<list type="table">
-        ///  		<listheader>
-        ///  			<devName>Developer\Date\Time</devName>
-        ///  			<devCompany>Developer Company</devCompany>
-        ///  			<devPhone>Developer Phone</devPhone>
-        ///  			<devEmail>Developer Email</devEmail>
-        ///  			<devMachine>Developer On</devMachine>
-        ///  			<description>Description</description>
-        ///  		</listheader>
-        ///  		<item>
-        ///  				<devName>
-        /// 		Developer: Danny C. McNaught
-        /// 		<para>Date: Saturday, February 1, 2020</para>
-        /// 		<para>Time: 17:01 PM</para>
-        /// 	</devName>
-        ///  			<devCompany>Computer Question</devCompany>
-        ///  			<devPhone>1-919-239-3306</devPhone>
-        ///  				<devEmail>
-        /// 		<a href="mailto:sfcsarge@outlook.com">mailto:sfcsarge@outlook.com</a>
-        /// 	</devEmail>
-        ///  			<devMachine>SURFACE-PRO-LTE</devMachine>
-        ///  			<description>Created XML Comment</description>
-        ///  		</item>
-        ///  	</list>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
         /// </remarks>
         public static StringBuilder MountDrive(bool defaultValue = false)
         {
@@ -621,7 +574,27 @@ namespace StartDevDrive
                 return stringBuilder;
             }
         }
-        
+
+        /// <summary>Creates the development text file asynchronous.</summary>
+        /// <param name="vhdxDriveLocation">The VHDX drive location.</param>
+        /// <param name="vhdxFileName">Name of the VHDX file.</param>
+        /// <param name="fileFullName">Full name of the file.</param>
+        /// <param name="vhdxDriveLetter">The VHDX drive letter.</param>
+        /// <returns>System.Threading.Tasks.Task.</returns>
+        /// <remarks>
+        /// <para><b>History:</b></para>
+        /// <list type="table">
+        /// <item>
+        /// <description><b>Code Changed by:</b><para>Danny C. McNaught</para><para><para><a href="mailto:danny.mcnaught@dannymcnaught.com">danny.mcnaught@dannymcnaught.com</a></para></para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code changed on Visual Studio Host Machine:</b><para>DESKTOP-ACLFE3O</para></description>
+        /// </item>
+        /// <item>
+        /// <description><b>Code Change Date and Time:</b><para>Sunday, June 20, 2021 10:42 PM</para><b>Code Changes:</b><para>Created XML Comment</para></description>
+        /// </item>
+        /// </list>
+        /// </remarks>
         public static async Task CreateDevelopmentTxtFileAsync(string vhdxDriveLocation, string vhdxFileName, string fileFullName, string vhdxDriveLetter)
         {
             string[] lines = { $"select vdisk file=\"{vhdxDriveLocation}{vhdxFileName}\"", "attach vdisk", $"assign letter={vhdxDriveLetter.First()}", "exit" };
