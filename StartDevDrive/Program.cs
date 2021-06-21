@@ -295,8 +295,7 @@ namespace StartDevDrive
                 args.SetValue($@"{Properties.Resources.AppLogLocation}", 1);
             }
             Process[] processes = Process.GetProcessesByName("StartDevDrive");
-            string[] ids = processes.Select(p => p.Id.ToString()).ToArray();
-            if (ids.Length > 1)
+            if (processes.Select(p => p.Id.ToString()).ToArray().Length > 1)
             {
                 Environment.Exit(0);
             }
@@ -431,19 +430,19 @@ namespace StartDevDrive
                     process.Close();
                 }
                 Logger.LogInformation(message: $@"Refreshed System Icons {processCommandLine}.");
-                stringBuilder.AppendLine("Success");
+                _ = stringBuilder.AppendLine("Success");
                 return stringBuilder;
             }
             catch (Win32Exception ex)
             {
                 Logger.LogError(message: $@"Win32Exception Message: {ex.Message} Stack Trace {ex.StackTrace}.");
-                stringBuilder.AppendLine("Failed");
+                _ = stringBuilder.AppendLine("Failed");
                 return stringBuilder;
             }
             catch (Exception ex)
             {
                 Logger.LogError(message: $@"Exception Message: {ex.Message} Stack Trace {ex.StackTrace}.");
-                stringBuilder.AppendLine("Failed");
+                _ = stringBuilder.AppendLine("Failed");
                 return stringBuilder;
             }
         }
@@ -591,15 +590,13 @@ namespace StartDevDrive
             Logger.LogInformation(message: $@"Called MountDrive({defaultValue}).");
             try
             {
-                string workingDirectory = @"C:\Windows\System32";
-                string exefile = "diskpart.exe";
                 ProcessStartInfo startInfo = new();
                 startInfo.ArgumentList.Add("/s");
-                startInfo.ArgumentList.Add(@$"{AppLocation}\Development.txt");
+                startInfo.ArgumentList.Add(@$"{AppLocation}\{Properties.Resources.MountFileName}");
                 startInfo.CreateNoWindow = true;
                 startInfo.UseShellExecute = false;
                 //startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                startInfo.FileName = Path.Combine(workingDirectory, exefile);
+                startInfo.FileName = Path.Combine(@"C:\Windows\System32", "diskpart.exe");
                 using (Process process = new())
                 {
                     process.StartInfo = startInfo;
@@ -608,27 +605,26 @@ namespace StartDevDrive
                     process.Close();
                 }
                 Logger.LogInformation(message: $@"MountDrive({defaultValue}) result: true.");
-                stringBuilder.AppendLine("Success");
+                _ = stringBuilder.AppendLine("Success");
                 return stringBuilder;
             }
             catch (Win32Exception ex)
             {
                 Logger.LogError(message: $@"Win32Exception Message: {ex.Message} Stack Trace {ex.StackTrace}.");
-                stringBuilder.AppendLine("Failed");
+                _ = stringBuilder.AppendLine("Failed");
                 return stringBuilder;
             }
             catch (Exception ex)
             {
                 Logger.LogError(message: $@"Exception Message: {ex.Message} Stack Trace {ex.StackTrace}.");
-                stringBuilder.AppendLine("Failed");
+                _ = stringBuilder.AppendLine("Failed");
                 return stringBuilder;
             }
         }
+        
         public static async Task CreateDevelopmentTxtFileAsync(string vhdxDriveLocation, string vhdxFileName, string fileFullName, string vhdxDriveLetter)
         {
             string[] lines = { $"select vdisk file=\"{vhdxDriveLocation}{vhdxFileName}\"", "attach vdisk", $"assign letter={vhdxDriveLetter.First()}", "exit" };
-
-            //await File.WriteAllLinesAsync(fileFullName, lines);
             CancellationTokenSource cts = new();
             CancellationToken token = cts.Token;
             Task result = Task.Factory.StartNew(() => File.WriteAllLinesAsync(fileFullName, lines), token, TaskCreationOptions.None, TaskScheduler.Default).ContinueWith((antecedent) =>
