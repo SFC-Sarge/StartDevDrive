@@ -2,6 +2,7 @@
 
 ## Quick Start Notes:
 
+This document contains API's used in the the solution.
 This Solution requires Visual Studio 2022 Enterprise 17.0.0 Preview 1 or higher.
 Use this solution alse to build StartDevDrive_api.pdf, and StartDevDrive_articles.pdf using DocFx and wkhtmltopdf 0.12.6 or higher.
 
@@ -19,7 +20,7 @@ Microsoft.Extensions.Logging version 6.0.0-preview.5.21301.5 or higher.
 
 Net Core 6.0.100-preview.5.21302.13 or higher.
 
-[Download the Net Core 6.0.100-preview.5.21302.13](https://dotnet.microsoft.com/download/dotnet/6.0.100-preview.5.21302.13)
+[Download the Net Core 6.0.100-preview.5.21302.13](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.100-preview.5-windows-x64-installer)
 
 Visual Studio Enterprise 2022 version 17.0.0 Preview 1 or higher.
 
@@ -28,4 +29,4 @@ Visual Studio Enterprise 2022 version 17.0.0 Preview 1 or higher.
 
 Wkhtmltopdf 0.12.6 or higher.
 
-[Download the Wkhtmltopdf 0.12.6 application install from](https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1.msvc2015-win64.exe)
+[Download the Wkhtmltopdf 0.12.6 application installer](https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1.msvc2015-win64.exe)
