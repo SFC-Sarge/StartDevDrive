@@ -44,7 +44,7 @@ namespace StartDevDrive
     /// </item>
     /// </list>
     /// </remarks>
-    class Program
+    public class Program
     {
         /// <summary>Gets or sets the factory.</summary>
         /// <value>The factory.</value>

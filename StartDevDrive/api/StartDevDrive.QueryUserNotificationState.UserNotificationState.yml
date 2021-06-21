@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState.UserNotificationState
+  id: QueryUserNotificationState.UserNotificationState
+  parent: StartDevDrive
+  children:
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.AcceptsNotifications
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.Busy
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.NotPresent
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.PresentationMode
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.QuietTime
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen
+  langs:
+  - csharp
+  - vb
+  name: QueryUserNotificationState.UserNotificationState
+  nameWithType: QueryUserNotificationState.UserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  type: Enum
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: UserNotificationState
+    path: QueryUserNotificationState.cs
+    startLine: 52
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: User Notification State
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: public enum UserNotificationState
+    content.vb: Public Enum UserNotificationState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.NotPresent
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.NotPresent
+  id: NotPresent
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: NotPresent
+  nameWithType: QueryUserNotificationState.UserNotificationState.NotPresent
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.NotPresent
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: NotPresent
+    path: QueryUserNotificationState.cs
+    startLine: 70
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: >-
+    A screen saver is displayed, the machine is locked,
+
+    or a nonactive Fast User Switching session is in progress.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: NotPresent = 1
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.Busy
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.Busy
+  id: Busy
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: Busy
+  nameWithType: QueryUserNotificationState.UserNotificationState.Busy
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.Busy
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: Busy
+    path: QueryUserNotificationState.cs
+    startLine: 89
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: >-
+    A full-screen application is running or Presentation Settings are applied.
+
+    Presentation Settings allow a user to put their machine into a state fit
+
+    for an uninterrupted presentation, such as a set of PowerPoint slides, with a single click.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: Busy = 2
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen
+  id: RunningDirect3dFullScreen
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: RunningDirect3dFullScreen
+  nameWithType: QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.RunningDirect3dFullScreen
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: RunningDirect3dFullScreen
+    path: QueryUserNotificationState.cs
+    startLine: 106
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: A full-screen (exclusive mode) Direct3D application is running.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: RunningDirect3dFullScreen = 3
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.PresentationMode
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.PresentationMode
+  id: PresentationMode
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: PresentationMode
+  nameWithType: QueryUserNotificationState.UserNotificationState.PresentationMode
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.PresentationMode
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: PresentationMode
+    path: QueryUserNotificationState.cs
+    startLine: 123
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: The user has activated Windows presentation settings to block notifications and pop-up messages.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: PresentationMode = 4
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.AcceptsNotifications
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.AcceptsNotifications
+  id: AcceptsNotifications
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: AcceptsNotifications
+  nameWithType: QueryUserNotificationState.UserNotificationState.AcceptsNotifications
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.AcceptsNotifications
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: AcceptsNotifications
+    path: QueryUserNotificationState.cs
+    startLine: 140
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: None of the other states are found, notifications can be freely sent.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: AcceptsNotifications = 5
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState.QuietTime
+  commentId: F:StartDevDrive.QueryUserNotificationState.UserNotificationState.QuietTime
+  id: QuietTime
+  parent: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: QuietTime
+  nameWithType: QueryUserNotificationState.UserNotificationState.QuietTime
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState.QuietTime
+  type: Field
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: QuietTime
+    path: QueryUserNotificationState.cs
+    startLine: 161
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: >-
+    Introduced in Windows 7. The current user is in &quot;quiet time&quot;, which is the first hour after
+
+    a new user logs into his or her account for the first time. During this time, most notifications
+
+    should not be sent or shown. This lets a user become accustomed to a new computer system
+
+    without those distractions.
+
+    Quiet time also occurs for each user after an operating system upgrade or clean installation.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: QuietTime = 6
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: StartDevDrive
+  commentId: N:StartDevDrive
+  name: StartDevDrive
+  nameWithType: StartDevDrive
+  fullName: StartDevDrive
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState.UserNotificationState
+  parent: StartDevDrive
+  name: QueryUserNotificationState.UserNotificationState
+  nameWithType: QueryUserNotificationState.UserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState

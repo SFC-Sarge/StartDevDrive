@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: StartDevDrive
+  commentId: N:StartDevDrive
+  id: StartDevDrive
+  children:
+  - StartDevDrive.FileLoggerExtensions
+  - StartDevDrive.FileLoggerProvider
+  - StartDevDrive.Program
+  - StartDevDrive.QueryUserNotificationState
+  - StartDevDrive.QueryUserNotificationState.UserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: StartDevDrive
+  nameWithType: StartDevDrive
+  fullName: StartDevDrive
+  type: Namespace
+  assemblies:
+  - StartDevDrive
+references:
+- uid: StartDevDrive.FileLoggerExtensions
+  commentId: T:StartDevDrive.FileLoggerExtensions
+  name: FileLoggerExtensions
+  nameWithType: FileLoggerExtensions
+  fullName: StartDevDrive.FileLoggerExtensions
+- uid: StartDevDrive.FileLoggerProvider
+  commentId: T:StartDevDrive.FileLoggerProvider
+  name: FileLoggerProvider
+  nameWithType: FileLoggerProvider
+  fullName: StartDevDrive.FileLoggerProvider
+- uid: StartDevDrive.Program
+  commentId: T:StartDevDrive.Program
+  name: Program
+  nameWithType: Program
+  fullName: StartDevDrive.Program
+- uid: StartDevDrive.QueryUserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState
+  name: QueryUserNotificationState
+  nameWithType: QueryUserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState.UserNotificationState
+  parent: StartDevDrive
+  name: QueryUserNotificationState.UserNotificationState
+  nameWithType: QueryUserNotificationState.UserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState
+- uid: StartDevDrive
+  commentId: N:StartDevDrive
+  name: StartDevDrive
+  nameWithType: StartDevDrive
+  fullName: StartDevDrive

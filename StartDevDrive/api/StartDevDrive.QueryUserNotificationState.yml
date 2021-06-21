@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: StartDevDrive.QueryUserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState
+  id: QueryUserNotificationState
+  parent: StartDevDrive
+  children:
+  - StartDevDrive.QueryUserNotificationState.State
+  langs:
+  - csharp
+  - vb
+  name: QueryUserNotificationState
+  nameWithType: QueryUserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState
+  type: Class
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: QueryUserNotificationState
+    path: QueryUserNotificationState.cs
+    startLine: 35
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Class QueryUserNotificationState
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: public static class QueryUserNotificationState
+    content.vb: Public Module QueryUserNotificationState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: StartDevDrive.QueryUserNotificationState.State
+  commentId: M:StartDevDrive.QueryUserNotificationState.State
+  id: State
+  parent: StartDevDrive.QueryUserNotificationState
+  langs:
+  - csharp
+  - vb
+  name: State()
+  nameWithType: QueryUserNotificationState.State()
+  fullName: StartDevDrive.QueryUserNotificationState.State()
+  type: Method
+  source:
+    remote:
+      path: StartDevDrive/QueryUserNotificationState.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: State
+    path: QueryUserNotificationState.cs
+    startLine: 250
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: States this instance.
+  remarks: >-
+    <p>
+
+    <strong>History:</strong>
+
+    </p>
+
+    <table><thead><tr><th>Description</th></tr></thead><tbody><tr><td>Created XML Comment</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public static QueryUserNotificationState.UserNotificationState State()
+    return:
+      type: StartDevDrive.QueryUserNotificationState.UserNotificationState
+      description: UserNotificationState.
+    content.vb: Public Shared Function State As QueryUserNotificationState.UserNotificationState
+  overload: StartDevDrive.QueryUserNotificationState.State*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: StartDevDrive
+  commentId: N:StartDevDrive
+  name: StartDevDrive
+  nameWithType: StartDevDrive
+  fullName: StartDevDrive
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StartDevDrive.QueryUserNotificationState.State*
+  commentId: Overload:StartDevDrive.QueryUserNotificationState.State
+  name: State
+  nameWithType: QueryUserNotificationState.State
+  fullName: StartDevDrive.QueryUserNotificationState.State
+- uid: StartDevDrive.QueryUserNotificationState.UserNotificationState
+  commentId: T:StartDevDrive.QueryUserNotificationState.UserNotificationState
+  parent: StartDevDrive
+  name: QueryUserNotificationState.UserNotificationState
+  nameWithType: QueryUserNotificationState.UserNotificationState
+  fullName: StartDevDrive.QueryUserNotificationState.UserNotificationState

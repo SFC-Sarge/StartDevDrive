@@ -33,9 +33,9 @@ namespace StartDevDrive
     /// </item>
     /// </list>
     /// </remarks>
-    static class QueryUserNotificationState
+    public static class QueryUserNotificationState
     {
-        /// <summary>[ERROR: invalid expression FieldName.Words.TheAndAllAsSentence]</summary>
+        /// <summary>User Notification State</summary>
         /// <remarks>
         /// <para><b>History:</b></para>
         /// <list type="table">

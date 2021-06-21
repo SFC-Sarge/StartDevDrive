@@ -1,0 +1,14 @@
+### YamlMime:TableOfContent
+- uid: StartDevDrive
+  name: StartDevDrive
+  items:
+  - uid: StartDevDrive.FileLoggerExtensions
+    name: FileLoggerExtensions
+  - uid: StartDevDrive.FileLoggerProvider
+    name: FileLoggerProvider
+  - uid: StartDevDrive.Program
+    name: Program
+  - uid: StartDevDrive.QueryUserNotificationState
+    name: QueryUserNotificationState
+  - uid: StartDevDrive.QueryUserNotificationState.UserNotificationState
+    name: QueryUserNotificationState.UserNotificationState

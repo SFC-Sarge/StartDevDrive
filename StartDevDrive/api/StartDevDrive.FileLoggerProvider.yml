@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: StartDevDrive.FileLoggerProvider
+  commentId: T:StartDevDrive.FileLoggerProvider
+  id: FileLoggerProvider
+  parent: StartDevDrive
+  children:
+  - StartDevDrive.FileLoggerProvider.#ctor(System.IO.StreamWriter)
+  - StartDevDrive.FileLoggerProvider.#ctor(System.String,System.String)
+  - StartDevDrive.FileLoggerProvider.AppName
+  - StartDevDrive.FileLoggerProvider.AppPath
+  - StartDevDrive.FileLoggerProvider.CreateLogger(System.String)
+  - StartDevDrive.FileLoggerProvider.Dispose
+  langs:
+  - csharp
+  - vb
+  name: FileLoggerProvider
+  nameWithType: FileLoggerProvider
+  fullName: StartDevDrive.FileLoggerProvider
+  type: Class
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: FileLoggerProvider
+    path: FileLoggerProvider.cs
+    startLine: 40
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Class FileLoggerProvider
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: 'public sealed class FileLoggerProvider : ILoggerProvider, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class FileLoggerProvider
+          Implements ILoggerProvider, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Logging.ILoggerProvider
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: StartDevDrive.FileLoggerProvider.#ctor(System.String,System.String)
+  commentId: M:StartDevDrive.FileLoggerProvider.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: FileLoggerProvider(String, String)
+  nameWithType: FileLoggerProvider.FileLoggerProvider(String, String)
+  fullName: StartDevDrive.FileLoggerProvider.FileLoggerProvider(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: .ctor
+    path: FileLoggerProvider.cs
+    startLine: 92
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Initializes a new instance of the <xref href="StartDevDrive.FileLoggerProvider" data-throw-if-not-resolved="false"></xref> class.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: public FileLoggerProvider(string name = null, string logFolder = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name.
+    - id: logFolder
+      type: System.String
+      description: The log folder.
+    content.vb: Public Sub New(name As String = Nothing, logFolder As String = Nothing)
+  overload: StartDevDrive.FileLoggerProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: StartDevDrive.FileLoggerProvider.#ctor(System.IO.StreamWriter)
+  commentId: M:StartDevDrive.FileLoggerProvider.#ctor(System.IO.StreamWriter)
+  id: '#ctor(System.IO.StreamWriter)'
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: FileLoggerProvider(StreamWriter)
+  nameWithType: FileLoggerProvider.FileLoggerProvider(StreamWriter)
+  fullName: StartDevDrive.FileLoggerProvider.FileLoggerProvider(System.IO.StreamWriter)
+  type: Constructor
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: .ctor
+    path: FileLoggerProvider.cs
+    startLine: 113
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Initializes a new instance of the <xref href="StartDevDrive.FileLoggerProvider" data-throw-if-not-resolved="false"></xref> class.
+  remarks: "\n<p><strong>History:</strong></p>\n<table><tbody><tr><td><strong>Code Changed by:</strong><p>Danny C. McNaught</p><p><p><a href=\"mailto:danny.mcnaught@dannymcnaught.com\">danny.mcnaught@dannymcnaught.com</a></p></p></td></tr><tr><td><strong>Code changed on Visual Studio Host Machine:</strong><p>DESKTOP-ACLFE3O</p></td></tr><tr><td><strong>Code Change Date and Time:</strong><p>Sunday, June 20, 2021 10:44 PM</p><strong>Code Changes:</strong><p>Created XML Comment</p></td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: public FileLoggerProvider(StreamWriter writer)
+    parameters:
+    - id: writer
+      type: System.IO.StreamWriter
+      description: The writer.
+    content.vb: Public Sub New(writer As StreamWriter)
+  overload: StartDevDrive.FileLoggerProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: StartDevDrive.FileLoggerProvider.AppPath
+  commentId: M:StartDevDrive.FileLoggerProvider.AppPath
+  id: AppPath
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: AppPath()
+  nameWithType: FileLoggerProvider.AppPath()
+  fullName: StartDevDrive.FileLoggerProvider.AppPath()
+  type: Method
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: AppPath
+    path: FileLoggerProvider.cs
+    startLine: 230
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Applications the path.
+  remarks: >-
+    <p>
+
+    <strong>History:</strong>
+
+    </p>
+
+    <table><thead><tr><th>Description</th></tr></thead><tbody><tr><td>Created XML Comment</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public static string AppPath()
+    return:
+      type: System.String
+      description: System.String.
+    content.vb: Public Shared Function AppPath As String
+  overload: StartDevDrive.FileLoggerProvider.AppPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: StartDevDrive.FileLoggerProvider.AppName
+  commentId: M:StartDevDrive.FileLoggerProvider.AppName
+  id: AppName
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: AppName()
+  nameWithType: FileLoggerProvider.AppName()
+  fullName: StartDevDrive.FileLoggerProvider.AppName()
+  type: Method
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: AppName
+    path: FileLoggerProvider.cs
+    startLine: 276
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Applications the name.
+  remarks: >-
+    <p>
+
+    <strong>History:</strong>
+
+    </p>
+
+    <table><thead><tr><th>Description</th></tr></thead><tbody><tr><td>Created XML Comment</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public static string AppName()
+    return:
+      type: System.String
+      description: System.String.
+    content.vb: Public Shared Function AppName As String
+  overload: StartDevDrive.FileLoggerProvider.AppName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: StartDevDrive.FileLoggerProvider.CreateLogger(System.String)
+  commentId: M:StartDevDrive.FileLoggerProvider.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(String)
+  nameWithType: FileLoggerProvider.CreateLogger(String)
+  fullName: StartDevDrive.FileLoggerProvider.CreateLogger(System.String)
+  type: Method
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: CreateLogger
+    path: FileLoggerProvider.cs
+    startLine: 329
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Creates a new T:Microsoft.Extensions.Logging.ILogger instance.
+  remarks: >-
+    <p>
+
+    <strong>History:</strong>
+
+    </p>
+
+    <table><thead><tr><th>Description</th></tr></thead><tbody><tr><td>Created XML Comment</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public ILogger CreateLogger(string categoryName)
+    parameters:
+    - id: categoryName
+      type: System.String
+      description: The category name for messages produced by the logger.
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ILogger.
+    content.vb: Public Function CreateLogger(categoryName As String) As ILogger
+  overload: StartDevDrive.FileLoggerProvider.CreateLogger*
+  implements:
+  - Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: StartDevDrive.FileLoggerProvider.Dispose
+  commentId: M:StartDevDrive.FileLoggerProvider.Dispose
+  id: Dispose
+  parent: StartDevDrive.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: FileLoggerProvider.Dispose()
+  fullName: StartDevDrive.FileLoggerProvider.Dispose()
+  type: Method
+  source:
+    remote:
+      path: StartDevDrive/FileLoggerProvider.cs
+      branch: master
+      repo: https://github.com/SFC-Sarge/StartDevDrive.git
+    id: Dispose
+    path: FileLoggerProvider.cs
+    startLine: 382
+  assemblies:
+  - StartDevDrive
+  namespace: StartDevDrive
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  remarks: >-
+    <p>
+
+    <strong>History:</strong>
+
+    </p>
+
+    <table><thead><tr><th>Description</th></tr></thead><tbody><tr><td>Created XML Comment</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: StartDevDrive.FileLoggerProvider.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: StartDevDrive
+  commentId: N:StartDevDrive
+  name: StartDevDrive
+  nameWithType: StartDevDrive
+  fullName: StartDevDrive
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Extensions.Logging.ILoggerProvider
+  commentId: T:Microsoft.Extensions.Logging.ILoggerProvider
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerProvider
+  nameWithType: ILoggerProvider
+  fullName: Microsoft.Extensions.Logging.ILoggerProvider
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: StartDevDrive.FileLoggerProvider
+  commentId: T:StartDevDrive.FileLoggerProvider
+  name: FileLoggerProvider
+  nameWithType: FileLoggerProvider
+  fullName: StartDevDrive.FileLoggerProvider
+- uid: StartDevDrive.FileLoggerProvider.#ctor*
+  commentId: Overload:StartDevDrive.FileLoggerProvider.#ctor
+  name: FileLoggerProvider
+  nameWithType: FileLoggerProvider.FileLoggerProvider
+  fullName: StartDevDrive.FileLoggerProvider.FileLoggerProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.IO.StreamWriter
+  commentId: T:System.IO.StreamWriter
+  parent: System.IO
+  isExternal: true
+  name: StreamWriter
+  nameWithType: StreamWriter
+  fullName: System.IO.StreamWriter
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: StartDevDrive.FileLoggerProvider.AppPath*
+  commentId: Overload:StartDevDrive.FileLoggerProvider.AppPath
+  name: AppPath
+  nameWithType: FileLoggerProvider.AppPath
+  fullName: StartDevDrive.FileLoggerProvider.AppPath
+- uid: StartDevDrive.FileLoggerProvider.AppName*
+  commentId: Overload:StartDevDrive.FileLoggerProvider.AppName
+  name: AppName
+  nameWithType: FileLoggerProvider.AppName
+  fullName: StartDevDrive.FileLoggerProvider.AppName
+- uid: StartDevDrive.FileLoggerProvider.CreateLogger*
+  commentId: Overload:StartDevDrive.FileLoggerProvider.CreateLogger
+  name: CreateLogger
+  nameWithType: FileLoggerProvider.CreateLogger
+  fullName: StartDevDrive.FileLoggerProvider.CreateLogger
+- uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  commentId: M:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  parent: Microsoft.Extensions.Logging.ILoggerProvider
+  isExternal: true
+  name: CreateLogger(String)
+  nameWithType: ILoggerProvider.CreateLogger(String)
+  fullName: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+    name: CreateLogger
+    nameWithType: ILoggerProvider.CreateLogger
+    fullName: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+    name: CreateLogger
+    nameWithType: ILoggerProvider.CreateLogger
+    fullName: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: StartDevDrive.FileLoggerProvider.Dispose*
+  commentId: Overload:StartDevDrive.FileLoggerProvider.Dispose
+  name: Dispose
+  nameWithType: FileLoggerProvider.Dispose
+  fullName: StartDevDrive.FileLoggerProvider.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
